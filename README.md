@@ -1,65 +1,83 @@
-DailyTracker
+Que projeto bacana! Construir algo "na mão" com ADO.NET e SQL puro é uma das melhores formas de entender como o .NET realmente funciona por debaixo dos panos. Isso dá uma base sólida antes de pular para ORMs como o Entity Framework.
 
-Aplicativo pessoal para organizar e acompanhar atividades diárias, estudos, exercícios físicos, tarefas domésticas e lazer.
+Aqui está uma proposta de README.md bem estruturada, visual e profissional para o seu GitHub:
 
-O objetivo é criar uma rotina saudável, acompanhar progresso e evoluir profissionalmente estudando C# e .NET.
+🚀 DailyTracker
+DailyTracker é um ecossistema pessoal para organização e monitoramento de produtividade. O foco principal é a construção de uma rotina saudável, equilibrando estudos técnicos, saúde física, tarefas domésticas e bem-estar.
 
-Funcionalidades
+Este projeto também serve como um laboratório prático para o domínio da plataforma .NET 8 e do banco de dados PostgreSQL, utilizando padrões de arquitetura corporativa.
 
-Cadastro de atividades com tempo estimado e concluído
+🛠️ Tecnologias e Ferramentas
+Linguagem: C# 12 / .NET 8
 
-Percentual de conclusão automático
+Banco de Dados: PostgreSQL
 
-Registro de sessões de atividades
+Acesso a Dados: ADO.NET (Npgsql) — SQL manual para máximo controle e performance.
 
-Controle por categoria (Estudos, Exercícios, Casa, Lazer)
+Arquitetura: N-Tier (Camadas: VO, BLL, DAL)
 
-Dashboard com gráficos e progresso (planejado)
+Frontend (Planejado): ASP.NET Razor Pages + TypeScript/JavaScript
 
-Controle de plataformas de estudo (Udemy, YouTube, etc.)
+🏗️ Arquitetura do Projeto
+O projeto segue um padrão de camadas inspirado em sistemas corporativos reais, garantindo separação de responsabilidades e facilidade de manutenção:
 
-Arquitetura
+VO (Value Objects): Classes que representam as entidades de domínio (Ex: AtividadeVO, SessaoAtividadeVO).
 
-Projeto estruturado em:
+BLL (Business Logic Layer): Onde reside a inteligência do app e as validações de regra de negócio.
 
-VO – objetos de domínio
+DAL (Data Access Layer): Camada de persistência que lida diretamente com o PostgreSQL via comandos SQL manuais.
 
-BLL – regras de negócio
+📋 Funcionalidades Principais
+Gestão de Atividades: Cadastro com tempo estimado vs. tempo concluído.
 
-DAL – acesso a dados
+Categorização Inteligente: Separação por Estudos, Exercícios, Casa e Lazer.
 
-Seguindo padrão corporativo inspirado na arquitetura de sistemas reais.
+Rastreamento de Estudos: Controle específico de plataformas (Udemy, YouTube, Alura, etc).
 
-Tecnologias
+Registro de Sessões: Histórico detalhado de cada vez que uma atividade foi realizada.
 
-C# / .NET 8+
+Cálculo de Progresso: Percentuais de conclusão gerados automaticamente.
 
-PostgreSQL (banco de dados)
+Dashboard (Em breve): Gráficos evolutivos para visualização de performance.
 
-Npgsql (conexão com PostgreSQL via ADO.NET)
+📈 Status do Desenvolvimento
+Concluído ✅
+[x] Definição da arquitetura base.
 
-ASP.NET / Razor Pages (frontend planejado)
+[x] Criação das classes de domínio (VOs): Atividade, SessaoAtividade, Plataforma, Categoria.
 
-TypeScript / JavaScript (frontend planejado)
+[x] Estruturação das pastas do projeto.
 
-Observação: não será utilizado Entity Framework; SQL será feito manualmente via cmd.CommandText.
+Em Progresso 🚧
+[ ] Configuração do banco de dados PostgreSQL.
 
-Status Atual
+[ ] Implementação do CRUD na camada DAL (SQL via cmd.CommandText).
 
-VO criados: AtividadeVO, SessaoAtividadeVO, PlataformaVO, CategoriaVO
+[ ] Criação da lógica de cálculo de progresso na BLL.
 
-Estrutura inicial do projeto pronta
+Futuro 🚀
+[ ] Interface Web com Razor Pages.
 
-Banco PostgreSQL ainda não configurado
+[ ] Gráficos interativos de evolução semanal/mensal.
 
-Próximos passos
+[ ] Sistema de notificações.
 
-Configurar PostgreSQL
+🗄️ Estrutura do Banco de Dados (Preview)
+Como o projeto não utiliza Entity Framework, o controle de schema é feito manualmente. Abaixo, as principais entidades mapeadas:
 
-Criar DAL e métodos de CRUD
+Atividade: Descrição, CategoriaID, TempoEstimado.
 
-Registrar atividades e sessões
+SessaoAtividade: AtividadeID, Data, TempoGasto, Observações.
 
-Implementar dashboard e gráficos
+Plataforma: Nome da plataforma de estudo (Ex: Udemy).
 
-Tornar o app utilizável no dia a dia
+🛠️ Como rodar (Em breve)
+Clone o repositório.
+
+Configure a connection string no arquivo de configuração do banco.
+
+Execute os scripts SQL contidos na pasta /Scripts.
+
+dotnet run
+
+"O sucesso é a soma de pequenos esforços repetidos dia após dia."
