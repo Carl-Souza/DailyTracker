@@ -1,7 +1,3 @@
-Que projeto bacana! Construir algo "na mão" com ADO.NET e SQL puro é uma das melhores formas de entender como o .NET realmente funciona por debaixo dos panos. Isso dá uma base sólida antes de pular para ORMs como o Entity Framework.
-
-Aqui está uma proposta de README.md bem estruturada, visual e profissional para o seu GitHub:
-
 🚀 DailyTracker
 DailyTracker é um ecossistema pessoal para organização e monitoramento de produtividade. O foco principal é a construção de uma rotina saudável, equilibrando estudos técnicos, saúde física, tarefas domésticas e bem-estar.
 
