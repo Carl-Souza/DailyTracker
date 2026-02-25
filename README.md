@@ -1,4 +1,5 @@
 🚀 DailyTracker
+
 DailyTracker é um ecossistema pessoal para organização e monitoramento de produtividade. O foco principal é a construção de uma rotina saudável, equilibrando estudos técnicos, saúde física, tarefas domésticas e bem-estar.
 
 Este projeto também serve como um laboratório prático para o domínio da plataforma .NET 8 e do banco de dados PostgreSQL, utilizando padrões de arquitetura corporativa.
