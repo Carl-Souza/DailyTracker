@@ -12,7 +12,7 @@ namespace Lib.VO
 
         public string Nome { get; set; } = string.Empty;
 
-        public int CodigoCategoria { get; set; }
+        public int CodigoCategoriaAtividade { get; set; }
 
         public DateTime DataAtividade { get; set; }
 

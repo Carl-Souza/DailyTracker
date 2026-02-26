@@ -12,6 +12,8 @@ public class SessaoAtividadeVO
 
     public int CodigoAtividade { get; set; }
 
+    public int CodigoLocal { get; set; }
+
     public DateTime HoraInicio { get; set; }
 
     public DateTime HoraFim { get; set; }

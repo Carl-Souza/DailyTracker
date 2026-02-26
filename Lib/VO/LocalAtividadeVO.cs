@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DailyTracker.Lib.VO;
 
-public class PlataformaVO
+public class LocalAtividadeVO
 {
     public int Codigo { get; set; }
     public string Nome { get; set; } = string.Empty;

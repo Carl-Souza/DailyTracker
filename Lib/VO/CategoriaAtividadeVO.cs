@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lib.VO
 {
-    public class CategoriaVO
+    public class CategoriaAtividadeVO
     {
         public int Codigo { get; set; }
         public string Nome { get; set; } = string.Empty;
